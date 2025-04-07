@@ -4,7 +4,7 @@ import { Octokit } from '@octokit/core';
 // Función para obtener el token de GitHub del localStorage
 export const getGitHubToken = () => {
   // return localStorage.getItem('github_token');
-  return 'your_token_here';
+  return '<- your personal classic token here->';
 };
 
 // Guardar token de GitHub en localStorage

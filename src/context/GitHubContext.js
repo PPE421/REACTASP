@@ -40,7 +40,7 @@ export const GitHubProvider = ({ children }) => {
     localStorage.setItem('oauth_state', state);
 
     // Reemplazar con tu CLIENT_ID real
-    const CLIENT_ID = 'your-Client-ID aqui';
+    const CLIENT_ID = 'your_client_id-Github';
 
     // Construir URL de autorización
     const authUrl = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=repo&state=${state}&redirect_uri=${window.location.origin}/github-callback`;
