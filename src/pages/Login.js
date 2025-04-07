@@ -33,8 +33,8 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <div className="min-h-screen flex justify-center items-center h-screen bg-white dark:bg-gray-900 text-black dark:text-white">
+      <div className="p-8 bg-gray-100 dark:bg-gray-800 rounded shadow-md">
         <h1 className="text-2xl font-bold mb-6 text-center">Iniciar Sesión</h1>
         
         {successMessage && (

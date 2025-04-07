@@ -21,14 +21,14 @@ const Profile = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <div className="container mx-auto px-4 py-8">
-        <div className="bg-white rounded-lg shadow-md p-6 max-w-lg mx-auto">
+    <div className="min-h-screen bg-white dark:bg-gray-800 text-black dark:text-white">
+      <div className="container mx-auto px-4 py-8 " >
+        <div className="rounded-lg shadow-md p-6 max-w-lg mx-auto  bg-white dark:bg-gray-900 text-black dark:text-white">
           <h1 className="text-2xl font-bold mb-6 text-center">Perfil de Usuario</h1>
           
           <div className="mb-6">
             <h2 className="text-xl font-semibold mb-2">Información local</h2>
-            <div className="bg-gray-50 p-4 rounded">
+            <div className="bg-white dark:bg-gray-900 text-black dark:text-white p-4 rounded">
               <p><strong>Nombre:</strong> {user.name}</p>
               <p><strong>Email:</strong> {user.email}</p>
             </div>
@@ -41,7 +41,7 @@ const Profile = () => {
               <div className="text-center py-4">Cargando...</div>
             ) : isConnected ? (
               <div>
-                <div className="bg-green-50 p-4 rounded mb-4">
+                <div className="p-4 rounded mb-4  bg-white dark:bg-gray-900 text-black dark:text-white">
                   <p className="text-green-700">✓ Conectado con GitHub</p>
                   {userInfo && (
                     <div className="mt-2">
@@ -99,7 +99,7 @@ const Profile = () => {
           <div className="pt-4 border-t mt-6">
             <button 
               onClick={handleLogout}
-              className="w-full bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300"
+              className="w-full bg-red-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-300"
             >
               Cerrar sesión
             </button>

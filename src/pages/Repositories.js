@@ -4,7 +4,7 @@ import { useGitHub } from '../context/GitHubContext';
 
 const RepositoryCard = ({ repository, isFavorite, onToggleFavorite }) => {
   return (
-    <div className="bg-white p-4 rounded shadow-md mb-4">
+    <div className=" p-4 rounded shadow-md mb-4  bg-white dark:bg-gray-900 text-black dark:text-white">
       <div className="flex justify-between items-start">
         <div>
           <h3 className="text-lg font-semibold">{repository.name}</h3>
@@ -104,7 +104,7 @@ const Repositories = () => {
     : favorites;
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen  bg-white dark:bg-gray-900 text-black dark:text-white">
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">Repositorios de GitHub</h1>
@@ -116,7 +116,7 @@ const Repositories = () => {
           </button>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-4 mb-6">
+        <div className="rounded-lg shadow-md p-4 mb-6  bg-white dark:bg-gray-900 text-black dark:text-white">
           <div className="flex mb-4">
             <button
               onClick={() => setActiveTab('all')}
@@ -142,16 +142,16 @@ const Repositories = () => {
           </div>
 
           {activeTab === 'all' && (
-            <div className="relative">
+            <div className="relative ">
               <input
                 type="text"
                 placeholder="Buscar repositorios..."
                 value={searchQuery}
                 onChange={handleSearch}
-                className="w-full p-2 pl-10 border rounded-md"
+                className="w-full p-2 pl-10 border rounded-md  bg-white dark:bg-gray-700 text-black dark:text-white"
               />
               <svg
-                className="absolute left-3 top-2.5 w-5 h-5 text-gray-400"
+                className="absolute left-3 top-2.5 w-5 h-5 text-gray-500"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
