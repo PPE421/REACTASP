@@ -34,8 +34,8 @@ const SignUp = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <div className="min-h-screen flex items-center justify-center  bg-gray-100 dark:bg-gray-900  shadow-md">
+      <div className=" p-8 rounded  w-full max-w-md  bg-gray-100 dark:bg-gray-800  shadow-md">
         <h1 className="text-2xl font-bold mb-6 text-center">Registro</h1>
         
         {error && <div className="bg-red-100 text-red-700 p-3 rounded mb-4">{error}</div>}
@@ -52,7 +52,7 @@ const SignUp = () => {
                 <Field
                   type="text"
                   name="name"
-                  className="w-full p-2 border rounded"
+                  className="w-full p-2 border rounded  bg-gray-100 dark:bg-gray-700  shadow-md"
                 />
                 <ErrorMessage name="name" component="div" className="text-red-500 text-sm mt-1" />
               </div>
@@ -62,7 +62,7 @@ const SignUp = () => {
                 <Field
                   type="email"
                   name="email"
-                  className="w-full p-2 border rounded"
+                  className="w-full p-2 border rounded  bg-gray-100 dark:bg-gray-700  shadow-md"
                 />
                 <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
               </div>
@@ -72,7 +72,7 @@ const SignUp = () => {
                 <Field
                   type="password"
                   name="password"
-                  className="w-full p-2 border rounded"
+                  className="w-full p-2 border rounded  bg-gray-100 dark:bg-gray-700  shadow-md"
                 />
                 <ErrorMessage name="password" component="div" className="text-red-500 text-sm mt-1" />
               </div>

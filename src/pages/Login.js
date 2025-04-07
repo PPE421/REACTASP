@@ -33,8 +33,8 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <div className="min-h-screen flex items-center justify-center  bg-gray-100 dark:bg-gray-900 rounded shadow-md">
+      <div className="p-8 rounded shadow-md w-full max-w-md  bg-gray-100 dark:bg-gray-800 ">
         <h1 className="text-2xl font-bold mb-6 text-center">Iniciar Sesión</h1>
         
         {successMessage && (
@@ -50,12 +50,12 @@ const Login = () => {
         >
           {({ isSubmitting }) => (
             <Form>
-              <div className="mb-4">
+              <div className="mb-4 ">
                 <label htmlFor="email" className="block mb-1">Email</label>
                 <Field
                   type="email"
                   name="email"
-                  className="w-full p-2 border rounded"
+                  className="w-full p-2 border rounded  bg-gray-100 dark:bg-gray-700  shadow-md"
                 />
                 <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
               </div>
@@ -65,7 +65,7 @@ const Login = () => {
                 <Field
                   type="password"
                   name="password"
-                  className="w-full p-2 border rounded"
+                  className="w-full p-2 border  bg-gray-100 dark:bg-gray-700  shadow-md"
                 />
                 <ErrorMessage name="password" component="div" className="text-red-500 text-sm mt-1" />
               </div>
